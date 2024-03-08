@@ -1,10 +1,12 @@
 // mixins for
 
-@mixin mixinName($bg, $color){
-  background: $bg;
-  color:$color;
+@mixin circle($i) {
+  border-radius: 100%;
+  height: $i;
+  width: $i;
 }
 
-
+ $bgBlue: #001d38;
+ $cardBlue: #0a2640;
 // @include mixinName(red, white) // call to mixin
 
