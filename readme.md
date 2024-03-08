@@ -140,16 +140,4 @@ style.scss
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
 ![Alt text](image.png)

@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="./image.png">
-        <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/style.min.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <!-- -------- Header start  ------- -->
-        <header>
-            <div class="container">
-                <nav class="nav">
-                    <a href="" class="nav__logo">LOGO</a>
-                    <ul class="nav__list">
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Home</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">About</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Service</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Contact</a></li>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image.png">
+    <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Lawyer</title>
+</head>
+
+<body>
+    <!-- -------- Header start  ------- -->
+    <header>
+        <div class="container">
+            <nav class="nav">
+
+                <div class="nav__top">
+                    <img src="./assets/icons/logo.svg" alt="Logo">
+
+                    <div class="nav__top__search">
+                        <input type="text" id="search" class="nav__form--input" placeholder="Я хочу найти..." />
+                        <img src="./assets/icons/searchgray.svg" alt="search" />
+                    </div>
+
+                        <button class="nav__top__btn">
+                            <img src="./assets/icons/chat-bubble-question.svg" alt="chat-bubble-question">
+                            <span>Задать вопрос</span>
+                        </button>
+
+                    <div class="nav__top__contact">
+                        <a href="tel:8 800 302-92-70">8 800 302-92-70</a>
+                        <span>Бесплатный звонок юристу 24/7</span>
+                    </div>
+                </div>
+
+                <div class="nav__middle">
+
+                    <ul class="nav__middle--btn">
+                        <li>
+                            <img src="./assets/icons/phone.svg" alt="phone">
+                            <button>Заказать звонок</button>
+                        </li>
+                        
+                        <li>
+                            <img src="./assets/icons/telegram.svg" alt="telegram">
+                            <p>Telegram</p>
+                        </li>
                     </ul>
-                </nav>
-            </div>
-        </header>
 
-        <!-- -------- Header end  ------- -->
+                    <ul class="nav__middle--list">                   
+                        <li>Отзывы</li>
 
-        <main>
-            <!-- sections -->
-        </main>
+                        <li>Вопросы</li>
 
-        <footer>
-            <div class="container">
-                <p>Site footer</p>
-            </div>
-        </footer>
-    </body>
+                        <li>Наши юристы</li>
+
+                        <li>Статьи</li>
+
+                        <li>Контакты</li>
+                    </ul>
+
+                    <ul class="nav__middle--list-item">
+                        <li>
+                            <img src="./assets/icons/user.svg" alt="user">
+                        </li>
+                        <li>Вход / Регистрация</li>
+                    </ul>
+                </div>
+
+                <div class="nav__bottom">
+                    <ul class="nav__bottom--list">
+                        <li>Главная</li>
+                        <li>/</li>
+                        <li>Горячая линия</li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- -------- Header end  ------- -->
+
+    
+
+    <footer>
+        <div class="container">
+        </div>
+    </footer>
+</body>
+
 </html>

@@ -1,33 +1,147 @@
 header {
     width: 100%;
 
-    // example
-
     .nav {
-        display: flex;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
+        &__top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 40px;
+            padding-bottom: 30px;
 
-        &__logo {
-            font-style: 24px;
-            cursor: pointer;
+            img {
+                cursor: pointer;
+            }
+
+            &__search {
+                display: flex;
+                border-radius: 10px;
+                background: $color-second-gray;
+                align-items: center;
+                width: 400px;
+
+                img {
+                    color: $color-second-gray;
+                }
+
+                input {
+                    outline: none;
+                    border: none;
+                    background-color: transparent;
+                    width: 360px;
+                    cursor: pointer;
+                    padding: 14px 0px 14px 20px;
+                }
+            }
+
+            &__btn {
+                cursor: pointer;
+                padding: 13px 20px;
+                border: none;
+                border-radius: 10px;
+                background: $color-primary-green;
+                color: $color-white;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0%;
+                gap: 11px;
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    background: $color-emarald;
+                }
+
+                &:active {
+                    background: $color-primary-green;
+                }
+            }
+
+            &__contact {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                a {
+                    text-decoration: none;
+                    color: $color-base-black;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 27px;
+                    letter-spacing: 0%;
+                }
+
+                span {
+                    color: $color-third-gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0%;
+                }
+            }
         }
 
-        &__list {
+        &__middle {
             display: flex;
-            gap: 50px;
-            list-style-type: none;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
 
-            &--item {
-                text-transform: uppercase;
+            &--btn {
 
-                &-link {
-                    text-decoration: none;
-                    &:hover{
-                        color:red;
+                display: flex;
+                gap: 15px;
+
+                li {
+                    box-sizing: border-box;
+                    border: 1px solid rgba(47, 43, 67, 0.15);
+                    border-radius: 10px;
+                    display: flex;
+                    gap: 10px;
+                    padding: 10px 20px;
+                    align-items: center;
+                    cursor: pointer;
+
+                    button {
+                        outline: none;
+                        border: none;
+                        background: transparent;
+                        cursor: pointer;
                     }
                 }
+            }
+
+            &--list {
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                cursor: pointer;
+
+                :hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+            &--list-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                li {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &__bottom {
+            margin-bottom: 20px;
+            &--list {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                color: $color-third-gray;
             }
         }
     }
