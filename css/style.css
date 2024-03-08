@@ -687,6 +687,7 @@ main .help__wrapper--cards {
 main .selection__wrapper {
   display: flex;
   justify-content: space-between;
+  margin-bottom: -3px;
 }
 main .selection__wrapper h1 {
   color: #140A32;
@@ -723,6 +724,88 @@ main .selection__wrapper-info p {
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
+}
+main .hotlines__wrapper {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #33836E;
+  border-radius: 30px;
+  padding: 31px 57px 34px 60px;
+}
+main .hotlines__wrapper-call {
+  padding: 20px 0 0 0;
+}
+main .hotlines__wrapper-call h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0%;
+  margin-bottom: 10px;
+}
+main .hotlines__wrapper-call a {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: -3%;
+  text-decoration: none;
+}
+main .hotlines__wrapper--btns .info {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0%;
+  margin-bottom: 16px;
+}
+main .hotlines__wrapper--btns .calltheoperator {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+main .hotlines__wrapper--btns .calltheoperator .btn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 8px 16px;
+}
+main .hotlines__wrapper--btns .calltheoperator .btn span {
+  color: rgba(47, 43, 67, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin-bottom: 3px;
+}
+main .hotlines__wrapper--btns .calltheoperator .btn input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+main .hotlines__wrapper--btns .calltheoperator button {
+  cursor: pointer;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 18px 36px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+main .hotlines__wrapper--btns-info {
+  color: rgba(255, 255, 255, 0.5019607843);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+}
+main .hotlines__wrapper--btns-info span {
+  text-decoration: underline;
 }
 
 footer {
