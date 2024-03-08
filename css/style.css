@@ -658,6 +658,32 @@ main .callCenter__wrapper .onlineLawyer p {
   line-height: 25px;
   margin-bottom: 10px;
 }
+main .help {
+  margin-bottom: 60px;
+}
+main .help h1 {
+  color: #140A32;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -3%;
+  margin-bottom: 30px;
+}
+main .help__wrapper {
+  display: flex;
+  gap: 20px;
+}
+main .help__wrapper--cards {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  box-sizing: border-box;
+  /* Gray/Borders */
+  border: 1px solid rgba(47, 43, 67, 0.15);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
 
 footer {
   width: 100%;
