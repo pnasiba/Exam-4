@@ -842,6 +842,83 @@ main .aboutLawyers__wrapper--cards-item p {
 main .aboutLawyers__wrapper--cards-item .info {
   width: 502px;
 }
+main .questions {
+  margin-bottom: 80px;
+}
+main .questions__wrapper {
+  border-radius: 20px;
+  background: rgba(47, 43, 67, 0.0392156863);
+  display: flex;
+  justify-content: space-between;
+}
+main .questions__wrapper-call {
+  padding: 40px 15px 30px 43px;
+}
+main .questions__wrapper-call h1 {
+  width: 320px;
+  height: 88px;
+}
+main .questions__wrapper--btns .calltheoperator {
+  padding-top: 57px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 22px;
+}
+main .questions__wrapper--btns .calltheoperator .btn {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 8px 16px;
+}
+main .questions__wrapper--btns .calltheoperator .btn span {
+  color: rgba(47, 43, 67, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  margin-bottom: 3px;
+}
+main .questions__wrapper--btns .calltheoperator .btn input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #140a32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+}
+main .questions__wrapper--btns .calltheoperator button {
+  cursor: pointer;
+  box-sizing: border-box;
+  background: transparent;
+  padding: 16px 36px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  border: none;
+  background-color: #33836E;
+}
+main .questions__wrapper--btns .desc {
+  color: rgba(47, 43, 67, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0%;
+  width: 310px;
+}
+main .questions__wrapper .phone {
+  position: relative;
+  top: 4px;
+}
 
 footer {
   width: 100%;

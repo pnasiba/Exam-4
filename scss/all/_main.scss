@@ -424,6 +424,7 @@ main {
 
     .aboutLawyers {
         margin-bottom: 60px;
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
@@ -454,11 +455,103 @@ main {
                         border-bottom: 1px solid rgb(51, 131, 110);
                         ;
                     }
-                    .info{
+
+                    .info {
                         width: 502px;
                     }
 
                 }
+            }
+        }
+    }
+
+    .questions {
+        margin-bottom: 80px;
+
+        &__wrapper {
+            border-radius: 20px;
+            background: $color-second-gray;
+            display: flex;
+           justify-content: space-between;
+
+            &-call {
+                padding: 40px 15px 30px 43px;
+                h1{
+                    width: 320px;
+                        height: 88px;
+                }
+            }
+
+            &--btns {
+                .calltheoperator {
+                    padding-top: 57px;
+                    display: flex;
+                    gap: 15px;
+                    margin-bottom: 22px;
+
+                    .btn {
+                        display: flex;
+                        flex-direction: column;
+                        border-radius: 10px;
+                        background: $color-white;
+                        padding: 8px 16px;
+
+                        span {
+                            color: #2f2b4366;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            letter-spacing: 0px;
+                            margin-bottom: 3px;
+                        }
+
+                        input {
+                            outline: none;
+                            border: none;
+                            cursor: pointer;
+                            color: #140a32;
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 22px;
+                            letter-spacing: 0px;
+                        }
+                    }
+
+                    button {
+                        cursor: pointer;
+                        box-sizing: border-box;
+                        background: transparent;
+                        padding: 16px 36px;
+                        border-radius: 10px;
+                        color: $color-white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        border: none;
+                        background-color: $color-second-green;
+                    }
+                }
+
+                .desc {
+                    color: rgba(47, 43, 67, 0.4);
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    font-size: 12px;
+                    font-weight: 600;
+                    line-height: 16px;
+                    letter-spacing: 0%;
+                    width: 310px;
+
+                }
+
+            }
+
+            .phone{
+                position: relative;
+                top: 4px;
             }
         }
     }
