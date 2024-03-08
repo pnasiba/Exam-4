@@ -613,6 +613,51 @@ main .consultation__wrapper--card-item a {
   text-align: center;
   text-decoration: none;
 }
+main .callCenter {
+  margin-bottom: 80px;
+}
+main .callCenter__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #33836E;
+  border-radius: 20px;
+}
+main .callCenter__wrapper .callgirl {
+  width: 258px;
+  height: 200px;
+  position: relative;
+  top: 3px;
+  border-bottom-left-radius: 20px;
+}
+main .callCenter__wrapper--info {
+  padding: 50px 0;
+}
+main .callCenter__wrapper h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0%;
+  margin-bottom: 8px;
+}
+main .callCenter__wrapper a {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: -3%;
+  text-decoration: none;
+}
+main .callCenter__wrapper .onlineLawyer {
+  padding: 38px 117px 56px 116px;
+}
+main .callCenter__wrapper .onlineLawyer p {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
 
 footer {
   width: 100%;
