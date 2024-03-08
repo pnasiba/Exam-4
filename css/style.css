@@ -807,6 +807,41 @@ main .hotlines__wrapper--btns-info {
 main .hotlines__wrapper--btns-info span {
   text-decoration: underline;
 }
+main .aboutLawyers {
+  margin-bottom: 60px;
+}
+main .aboutLawyers__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+main .aboutLawyers__wrapper--cards {
+  box-sizing: border-box;
+  border: 1px solid rgba(47, 43, 67, 0.1490196078);
+  border-radius: 20px;
+  padding: 20px;
+  width: 575px;
+  height: 287px;
+  margin-bottom: 20px;
+}
+main .aboutLawyers__wrapper--cards-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+main .aboutLawyers__wrapper--cards-item p {
+  color: #140A32;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgb(51, 131, 110);
+}
+main .aboutLawyers__wrapper--cards-item .info {
+  width: 502px;
+}
 
 footer {
   width: 100%;

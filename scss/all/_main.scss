@@ -332,9 +332,10 @@ main {
             border-radius: 30px;
             padding: 31px 57px 34px 60px;
 
-           &-call{
-            padding: 20px 0 0 0;
-            h3 {
+            &-call {
+                padding: 20px 0 0 0;
+
+                h3 {
                     color: $color-white;
                     font-size: 24px;
                     font-weight: 600;
@@ -342,7 +343,7 @@ main {
                     letter-spacing: 0%;
                     margin-bottom: 10px;
                 }
-            
+
                 a {
                     color: $color-white;
                     font-size: 42px;
@@ -351,7 +352,7 @@ main {
                     letter-spacing: -3%;
                     text-decoration: none;
                 }
-           }
+            }
 
             &--btns {
                 .info {
@@ -391,17 +392,17 @@ main {
                         }
                     }
 
-                    button{
+                    button {
                         cursor: pointer;
                         box-sizing: border-box;
                         background: transparent;
                         padding: 18px 36px;
-                            border: 1px solid $color-white;
-                            border-radius: 10px;
-                            color: $color-white;
-                                font-size: 16px;
-                                font-weight: 600;
-                                line-height: 22px;
+                        border: 1px solid $color-white;
+                        border-radius: 10px;
+                        color: $color-white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
                     }
                 }
 
@@ -411,11 +412,53 @@ main {
                     font-weight: 600;
                     line-height: 16px;
                     letter-spacing: 0%;
-                    span{
+
+                    span {
                         text-decoration: underline;
                     }
                 }
 
+            }
+        }
+    }
+
+    .aboutLawyers {
+        margin-bottom: 60px;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            &--cards {
+                box-sizing: border-box;
+                border: 1px solid #2f2b4326;
+                border-radius: 20px;
+                padding: 20px;
+                width: 575px;
+                height: 287px;
+                margin-bottom: 20px;
+
+                &-item {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    margin-bottom: 15px;
+
+                    p {
+                        color: $color-base-black;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        padding-bottom: 4px;
+                        border-bottom: 1px solid rgb(51, 131, 110);
+                        ;
+                    }
+                    .info{
+                        width: 502px;
+                    }
+
+                }
             }
         }
     }
