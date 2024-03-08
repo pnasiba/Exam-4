@@ -1,0 +1,88 @@
+main {
+    .intro__section {
+        &__wrapper {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &--texts {
+                h1 {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 38px;
+                    font-weight: 700;
+                    line-height: 52px;
+                    letter-spacing: -3%;
+                    text-align: left;
+                    width: 657px;
+                }
+
+                p {
+                    width: 657px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 160%;
+                    letter-spacing: 0%;
+                    text-align: left;
+                    margin-bottom: 30px;
+                }
+
+                &-btn {
+                    display: flex;
+                    gap: 30px;
+                    align-items: center;
+                    margin-bottom: 40px;
+
+                    button {
+                        border: none;
+                        border-radius: 10px;
+                        background: $color-second-green;
+                        padding: 16px 36px 18px 36px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0px;
+                        color: $color-white
+                    }
+
+                    &__item {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5px;
+
+                        a {
+                            text-decoration: none;
+                            color: $color-second-green;
+                            font-size: 24px;
+                            font-weight: 700;
+                            line-height: 33px;
+                            letter-spacing: 0%;
+                        }
+
+                        span {
+                            color: $color-third-gray;
+                            font-size: 12px;
+                            font-weight: 400;
+                            line-height: 16px;
+                            letter-spacing: 0%;
+                            text-align: left;
+                        }
+                    }
+                }
+
+                &_extra{
+                    display: flex;
+                    width: 628px !important;
+                    gap: 30px !important;
+
+                    &-info{
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
