@@ -472,13 +472,14 @@ main {
             border-radius: 20px;
             background: $color-second-gray;
             display: flex;
-           justify-content: space-between;
+            justify-content: space-between;
 
             &-call {
                 padding: 40px 15px 30px 43px;
-                h1{
+
+                h1 {
                     width: 320px;
-                        height: 88px;
+                    height: 88px;
                 }
             }
 
@@ -549,9 +550,48 @@ main {
 
             }
 
-            .phone{
+            .phone {
                 position: relative;
                 top: 4px;
+            }
+        }
+    }
+
+    .seoText {
+        &__wrapper {
+                margin-bottom: 80px;
+            h1 {
+                color: $color-base-black;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 44px;
+                letter-spacing: -3%;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $color-base-black;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 160%;
+                letter-spacing: 0%;
+                text-align: left;
+                margin-bottom: 30px;
+            }
+
+            button {
+                width: 100%;
+                padding: 17px 0;
+                background-color: #E0ECE9;
+                border: none;
+                border-radius: 10px;
+                color: $color-second-green;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 22px;
+                letter-spacing: 0px;
+                text-align: center;
+                cursor: pointer;
             }
         }
     }
