@@ -452,6 +452,9 @@ header .nav__bottom--list {
   color: rgba(47, 43, 67, 0.5019607843);
 }
 
+main .intro__section {
+  margin-bottom: 96px;
+}
 main .intro__section__wrapper {
   display: flex;
   justify-content: space-between;
@@ -493,6 +496,12 @@ main .intro__section__wrapper--texts-btn button {
   letter-spacing: 0px;
   color: #ffffff;
 }
+main .intro__section__wrapper--texts-btn button:hover {
+  background: #81D2BC;
+}
+main .intro__section__wrapper--texts-btn button:active {
+  background: #016F52;
+}
 main .intro__section__wrapper--texts-btn__item {
   display: flex;
   flex-direction: column;
@@ -523,6 +532,24 @@ main .intro__section__wrapper--texts_extra-info {
   display: flex;
   gap: 10px;
   align-items: center;
+}
+main .info__wrapper {
+  margin-bottom: 80px;
+}
+main .info__wrapper h1 {
+  color: #140A32;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -3%;
+  text-align: left;
+}
+main .info__wrapper p {
+  color: #140A32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 footer {

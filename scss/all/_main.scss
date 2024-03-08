@@ -1,5 +1,7 @@
 main {
     .intro__section {
+        margin-bottom: 96px;
+
         &__wrapper {
 
             display: flex;
@@ -43,8 +45,19 @@ main {
                         font-weight: 600;
                         line-height: 22px;
                         letter-spacing: 0px;
-                        color: $color-white
+
+                        color: $color-white;
+                        
+                        &:hover {
+                            background: $color-emarald;
+                        }
+
+                        &:active {
+                            background: $color-primary-green;
+                        }
                     }
+
+
 
                     &__item {
                         display: flex;
@@ -71,12 +84,12 @@ main {
                     }
                 }
 
-                &_extra{
+                &_extra {
                     display: flex;
                     width: 628px !important;
                     gap: 30px !important;
 
-                    &-info{
+                    &-info {
                         display: flex;
                         gap: 10px;
                         align-items: center;
@@ -85,4 +98,26 @@ main {
             }
         }
     }
+
+    .info__wrapper {
+        margin-bottom: 80px;
+
+        h1 {
+            color: $color-base-black;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: -3%;
+            text-align: left;
+        }
+
+        p {
+            color: $color-base-black;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 160%;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+    }
+
 }
