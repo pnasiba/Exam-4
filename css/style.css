@@ -551,6 +551,68 @@ main .info__wrapper p {
   letter-spacing: 0%;
   text-align: left;
 }
+main .consultation__wrapper {
+  margin-bottom: 80px;
+}
+main .consultation__wrapper h1 {
+  color: #140A32;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -3%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+main .consultation__wrapper .desc {
+  margin-bottom: 30px;
+  color: #140A32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+main .consultation__wrapper--card {
+  display: flex;
+  justify-content: space-between;
+}
+main .consultation__wrapper--card-item {
+  box-sizing: border-box;
+  border: 1px solid rgba(47, 43, 67, 0.1490196078);
+  border-radius: 20px;
+  padding: 20px;
+}
+main .consultation__wrapper--card-item .normal {
+  color: #140A32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding: 15px 0;
+  width: 230px;
+}
+main .consultation__wrapper--card-item .item {
+  margin-bottom: 20px;
+}
+main .consultation__wrapper--card-item .bold {
+  color: #140A32;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 15px;
+}
+main .consultation__wrapper--card-item a {
+  color: #33836E;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  text-decoration: none;
+}
 
 footer {
   width: 100%;
