@@ -1176,7 +1176,7 @@ main .selection__wrapper-desc {
     line-height: 160%;
     letter-spacing: 0%;
     text-align: left;
-    width: 360px;
+    width: 345px;
   }
 }
 main .selection__wrapper-info {
@@ -2051,6 +2051,11 @@ main .portal__wrapper--form-count span {
 footer {
   margin-bottom: 150px;
 }
+@media screen and (max-width: 390px) {
+  footer {
+    margin-bottom: 100px;
+  }
+}
 footer h1 {
   color: #140A32;
   font-size: 32px;
@@ -2060,13 +2065,33 @@ footer h1 {
   text-align: left;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 390px) {
+  footer h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+}
 footer .footer__wrapper--info {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 390px) {
+  footer .footer__wrapper--info {
+    flex-wrap: wrap;
+    margin-bottom: 15px !important;
+  }
+}
 footer .footer__wrapper--info .cards {
   width: 280px;
+}
+@media screen and (max-width: 390px) {
+  footer .footer__wrapper--info .cards {
+    width: 175px;
+  }
 }
 footer .footer__wrapper--info .cards h3 {
   color: #140A32;
@@ -2077,8 +2102,22 @@ footer .footer__wrapper--info .cards h3 {
   letter-spacing: 0%;
   text-align: left;
 }
+@media screen and (max-width: 390px) {
+  footer .footer__wrapper--info .cards h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
 footer .footer__wrapper--info .cards .desc {
   height: 118px;
+}
+@media screen and (max-width: 390px) {
+  footer .footer__wrapper--info .cards .desc {
+    height: 134px;
+  }
 }
 footer .footer__wrapper--info .cards .desc p {
   color: #140A32;
@@ -2088,4 +2127,13 @@ footer .footer__wrapper--info .cards .desc p {
   letter-spacing: 0%;
   text-align: left;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 390px) {
+  footer .footer__wrapper--info .cards .desc p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
 }
