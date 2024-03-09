@@ -337,7 +337,10 @@ header .nav__top {
   padding-top: 40px;
   padding-bottom: 30px;
 }
-header .nav__top img {
+header .nav__top-menu {
+  display: none;
+}
+header .nav__top .logo {
   cursor: pointer;
 }
 header .nav__top__search {
@@ -399,6 +402,9 @@ header .nav__top__contact span {
   line-height: 19px;
   letter-spacing: 0%;
 }
+header .nav__top .userIcon {
+  display: none;
+}
 header .nav__middle {
   display: flex;
   justify-content: space-between;
@@ -452,13 +458,219 @@ header .nav__bottom--list {
   color: rgba(47, 43, 67, 0.5019607843);
 }
 
+@media screen and (max-width: 390px) {
+  .nav__top {
+    border-bottom: 1px solid rgba(47, 43, 67, 0.5019607843);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    gap: 0px !important;
+    padding: 15px !important;
+  }
+  .nav__top-menu {
+    display: block !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .nav__top .logo {
+    cursor: pointer;
+    width: 159px !important;
+    height: 32px;
+  }
+  .nav__top__search {
+    display: none;
+    background: none !important;
+  }
+  .nav__top__search input {
+    display: none;
+  }
+  .nav__top__search img {
+    cursor: pointer;
+    position: relative;
+    right: 10px !important;
+    width: 24px !important;
+  }
+  .nav__top__btn {
+    display: none !important;
+  }
+  .nav__top__btn img {
+    display: none;
+  }
+  .nav__top__btn span {
+    display: none;
+  }
+  .nav__top__contact {
+    display: none !important;
+  }
+  .nav__top .userIcon {
+    background: none;
+    border: none;
+    display: block !important;
+    position: relative;
+    right: 47px !important;
+  }
+  .nav__middle {
+    display: none !important;
+  }
+  .nav__bottom {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nav__bottom--list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(47, 43, 67, 0.5019607843);
+  }
+}
+@media screen and (max-width: 420px) {
+  .nav__top {
+    border-bottom: 1px solid rgba(47, 43, 67, 0.5019607843);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    gap: 0px !important;
+    padding: 15px !important;
+  }
+  .nav__top-menu {
+    display: block !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .nav__top .logo {
+    cursor: pointer;
+    width: 159px;
+    height: 32px;
+  }
+  .nav__top__search {
+    display: none;
+    background: none !important;
+  }
+  .nav__top__search input {
+    display: none;
+  }
+  .nav__top__search img {
+    cursor: pointer;
+    position: relative;
+    left: 0px !important;
+    width: 24px !important;
+  }
+  .nav__top__btn {
+    display: none !important;
+  }
+  .nav__top__btn img {
+    display: none;
+  }
+  .nav__top__btn span {
+    display: none;
+  }
+  .nav__top__contact {
+    display: none !important;
+  }
+  .nav__top .userIcon {
+    background: none;
+    border: none;
+    display: block !important;
+    position: relative;
+    right: 20px;
+  }
+  .nav__middle {
+    display: none !important;
+  }
+  .nav__bottom {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nav__bottom--list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(47, 43, 67, 0.5019607843);
+  }
+}
+@media screen and (max-width: 495px) {
+  .nav__top {
+    border-bottom: 1px solid rgba(47, 43, 67, 0.5019607843);
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    gap: 48px !important;
+    padding: 15px !important;
+  }
+  .nav__top-menu {
+    display: block !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .nav__top .logo {
+    cursor: pointer;
+    width: 179px;
+    height: 32px;
+  }
+  .nav__top__search {
+    display: none;
+    background: none !important;
+  }
+  .nav__top__search input {
+    display: none;
+  }
+  .nav__top__search img {
+    cursor: pointer;
+    position: relative;
+    left: 45px;
+    width: 24px !important;
+  }
+  .nav__top__btn {
+    display: none !important;
+  }
+  .nav__top__btn img {
+    display: none;
+  }
+  .nav__top__btn span {
+    display: none;
+  }
+  .nav__top__contact {
+    display: none !important;
+  }
+  .nav__top .userIcon {
+    background: none;
+    border: none;
+    display: block !important;
+  }
+  .nav__middle {
+    display: none !important;
+  }
+  .nav__bottom {
+    padding-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nav__bottom--list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: rgba(47, 43, 67, 0.5019607843);
+  }
+}
 main .intro__section {
   margin-bottom: 96px;
+}
+@media screen and (max-width: 390px) {
+  main .intro__section {
+    margin-bottom: 40px;
+  }
 }
 main .intro__section__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper {
+    flex-direction: column-reverse;
+  }
 }
 main .intro__section__wrapper--texts h1 {
   display: flex;
@@ -470,6 +682,17 @@ main .intro__section__wrapper--texts h1 {
   text-align: left;
   width: 657px;
 }
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper--texts h1 {
+    font-size: 22px;
+    width: 360px;
+    line-height: 30px;
+    letter-spacing: -3%;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+}
 main .intro__section__wrapper--texts p {
   width: 657px;
   font-size: 16px;
@@ -479,11 +702,28 @@ main .intro__section__wrapper--texts p {
   text-align: left;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper--texts p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    width: 360px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 29px;
+  }
+}
 main .intro__section__wrapper--texts-btn {
   display: flex;
   gap: 30px;
   align-items: center;
   margin-bottom: 40px;
+}
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper--texts-btn {
+    flex-direction: column;
+  }
 }
 main .intro__section__wrapper--texts-btn button {
   border: none;
@@ -508,7 +748,6 @@ main .intro__section__wrapper--texts-btn__item {
   gap: 5px;
 }
 main .intro__section__wrapper--texts-btn__item a {
-  text-decoration: none;
   color: #33836E;
   font-size: 24px;
   font-weight: 700;
@@ -528,13 +767,33 @@ main .intro__section__wrapper--texts_extra {
   width: 628px !important;
   gap: 30px !important;
 }
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper--texts_extra {
+    flex-wrap: wrap;
+    width: 370px !important;
+    gap: 40px;
+    padding: 0 20px;
+  }
+}
 main .intro__section__wrapper--texts_extra-info {
   display: flex;
   gap: 10px;
   align-items: center;
 }
+@media screen and (max-width: 390px) {
+  main .intro__section__wrapper .man {
+    width: 235px !important;
+    height: 234.8px !important;
+    margin-bottom: 20px;
+  }
+}
 main .info__wrapper {
   margin-bottom: 80px;
+}
+@media screen and (max-width: 390px) {
+  main .info__wrapper {
+    margin-bottom: 40px;
+  }
 }
 main .info__wrapper h1 {
   color: #140A32;
@@ -542,6 +801,14 @@ main .info__wrapper h1 {
   line-height: 44px;
   letter-spacing: -3%;
   text-align: left;
+}
+@media screen and (max-width: 390px) {
+  main .info__wrapper h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -3%;
+  }
 }
 main .info__wrapper p {
   color: #140A32;
@@ -551,8 +818,22 @@ main .info__wrapper p {
   letter-spacing: 0%;
   text-align: left;
 }
+@media screen and (max-width: 390px) {
+  main .info__wrapper p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
 main .consultation__wrapper {
   margin-bottom: 80px;
+}
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper {
+    margin-bottom: 40px;
+  }
 }
 main .consultation__wrapper h1 {
   color: #140A32;
@@ -563,6 +844,15 @@ main .consultation__wrapper h1 {
   text-align: left;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+}
 main .consultation__wrapper .desc {
   margin-bottom: 30px;
   color: #140A32;
@@ -572,15 +862,37 @@ main .consultation__wrapper .desc {
   letter-spacing: 0%;
   text-align: left;
 }
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper .desc {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
 main .consultation__wrapper--card {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper--card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 160px));
+    row-gap: 15px;
+  }
 }
 main .consultation__wrapper--card-item {
   box-sizing: border-box;
   border: 1px solid rgba(47, 43, 67, 0.1490196078);
   border-radius: 20px;
   padding: 20px;
+}
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper--card-item {
+    width: 160px;
+    padding: 15px;
+  }
 }
 main .consultation__wrapper--card-item .normal {
   color: #140A32;
@@ -591,6 +903,17 @@ main .consultation__wrapper--card-item .normal {
   text-align: left;
   padding: 15px 0;
   width: 230px;
+}
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper--card-item .normal {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 135px;
+    height: 76px;
+  }
 }
 main .consultation__wrapper--card-item .item {
   margin-bottom: 20px;
@@ -604,6 +927,16 @@ main .consultation__wrapper--card-item .bold {
   text-align: left;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper--card-item .bold {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 135px;
+  }
+}
 main .consultation__wrapper--card-item a {
   color: #33836E;
   font-size: 16px;
@@ -612,6 +945,15 @@ main .consultation__wrapper--card-item a {
   letter-spacing: 0px;
   text-align: center;
   text-decoration: none;
+}
+@media screen and (max-width: 390px) {
+  main .consultation__wrapper--card-item a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
 }
 main .callCenter {
   margin-bottom: 80px;
