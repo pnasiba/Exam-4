@@ -958,23 +958,48 @@ main .consultation__wrapper--card-item a {
 main .callCenter {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 390px) {
+  main .callCenter {
+    margin-bottom: 40px;
+  }
+}
 main .callCenter__wrapper {
   display: flex;
   justify-content: space-between;
   background-color: #33836E;
   border-radius: 20px;
 }
-main .callCenter__wrapper .callgirl {
-  width: 258px;
+main .callCenter__wrapper--card {
+  display: flex;
+}
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper--card {
+    flex-direction: column-reverse;
+  }
+}
+main .callCenter__wrapper--card .callgirl {
+  width: 228px;
   height: 200px;
   position: relative;
   top: 3px;
   border-bottom-left-radius: 20px;
 }
-main .callCenter__wrapper--info {
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper--card .callgirl {
+    width: 180px;
+  }
+}
+main .callCenter__wrapper--card-info {
   padding: 50px 0;
 }
-main .callCenter__wrapper h3 {
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper--card-info {
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 0;
+  }
+}
+main .callCenter__wrapper--card h3 {
   color: #ffffff;
   font-size: 24px;
   font-weight: 600;
@@ -982,7 +1007,18 @@ main .callCenter__wrapper h3 {
   letter-spacing: 0%;
   margin-bottom: 8px;
 }
-main .callCenter__wrapper a {
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper--card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin-bottom: 0;
+    width: 250px;
+  }
+}
+main .callCenter__wrapper--card a {
   color: #ffffff;
   font-size: 42px;
   font-weight: 700;
@@ -990,8 +1026,30 @@ main .callCenter__wrapper a {
   letter-spacing: -3%;
   text-decoration: none;
 }
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper--card a {
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: -3%;
+    text-align: left;
+    width: 264px;
+  }
+}
 main .callCenter__wrapper .onlineLawyer {
   padding: 38px 117px 56px 116px;
+}
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper .onlineLawyer {
+    padding: 0;
+    position: relative;
+    top: 170px;
+    width: 154px;
+    right: 130px;
+  }
+  main .callCenter__wrapper .onlineLawyer img {
+    width: 180px;
+  }
 }
 main .callCenter__wrapper .onlineLawyer p {
   color: #ffffff;
@@ -999,6 +1057,16 @@ main .callCenter__wrapper .onlineLawyer p {
   font-weight: 600;
   line-height: 25px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 390px) {
+  main .callCenter__wrapper .onlineLawyer p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0px;
+    text-align: center;
+    width: 181px;
+  }
 }
 main .help {
   margin-bottom: 60px;
