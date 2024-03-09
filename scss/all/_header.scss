@@ -1,8 +1,17 @@
 header {
     width: 100%;
+    position: relative;
 
     .nav {
+        backdrop-filter: blur(400px);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+
         &__top {
+
             display: flex;
             align-items: center;
             justify-content: space-between;

@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/image.png">
-    <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
     <!-- main css -->
     <link rel="stylesheet" href="./css/style.min.css" />
     <title>Lawyer</title>
@@ -14,8 +13,8 @@
 <body>
     <!--------------------- Header start -------------------->
     <header>
-        <div class="container">
-            <nav class="nav">
+        <nav class="nav">
+                <div class="container">
 
                 <div class="nav__top">
                     <button class="nav__top-menu">
@@ -34,7 +33,7 @@
                     </button>
 
                     <div class="nav__top__contact">
-                        <a href="tel:8 800 302-92-70">8 800 302-92-70</a>
+                        <a href="tel:+8800302-92-70">8 800 302-92-70</a>
                         <span>Бесплатный звонок юристу 24/7</span>
                     </div>
 
@@ -85,8 +84,8 @@
                     </ul>
                 </div>
 
+            </div>
             </nav>
-        </div>
     </header>
     <!--------------------- Header end  -------------------->
 
@@ -109,7 +108,7 @@
                             <button>Задать вопрос юристу</button>
 
                             <div class="intro__section__wrapper--texts-btn__item">
-                                <a href="tel:8 800 302-92-70">8 800 302-92-70</a>
+                                <a href="tel:+8800302-92-70">8 800 302-92-70</a>
                                 <span>Бесплатный звонок юристу 24/7</span>
                             </div>
                         </div>
@@ -218,7 +217,7 @@
                         </div>
                         <div class="callCenter__wrapper--card-info">
                             <h3>Звоните, мы работаем 24/7</h3>
-                            <a href="tel:8 800 302-92-70">8 800 302-92-70</a>
+                            <a href="tel:+8800302-92-70">8 800 302-92-70</a>
                         </div>
                     </div>
                     <div class="onlineLawyer">
@@ -853,7 +852,8 @@
                         </form>
 
                         <p class="portal__wrapper--form-desc">Отправляя вопрос, вы соглашаетесь с условиями
-                            <span>Пользовательского соглашения</span></p>
+                            <span>Пользовательского соглашения</span>
+                        </p>
 
                         <div class="portal__wrapper--form-count">
                             <div>
@@ -870,6 +870,113 @@
             </div>
         </section>
         <!---------------- Portal section end ---------------->
+
+
+        <!-- <section class="popup">
+
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__wrapper-img">
+                        <img src="./assets/images/popup-bg.png" alt="popup">
+                    </div>
+
+                    <div class="popup__wrapper--desc">
+                        <h1>Бесплатная юридическая консультация по телефону</h1>
+
+                        <div class="popup__wrapper--desc-law">
+                            <img src="./assets/images/onlinelawyers.png" alt="lawyers">
+                            <p>64 юриста сейчас онлайн</p>
+                        </div>
+
+                        <div class="sendbtn">
+                            <div class="btn">
+                                <span>Номер телефона</span>
+                                <input type="tel" required placeholder="+7 963 335-87-52">
+                            </div>
+
+                            <div class="btn">
+                                <span>Ваше имя</span>
+                                <input type="text" required placeholder="Александр">
+                            </div>
+
+                            <button class="submitBtn">Отправить</button>
+
+                        </div>
+                        <p class="info">Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</p>
+
+
+                    </div>
+
+                    <img src="./assets/icons/closemenu.svg" alt="closemenu" class="close">
+                </div>
+            </div>
+
+        </section> -->
+
+        <section class="popup" id="popup">
+        
+            <div class="container">
+                <div class="popup__wrapper">
+                    <div class="popup__wrapper-img">
+                        <img src="./assets/images/popup-bg.png" alt="popup">
+                    </div>
+        
+                    <div class="popup__wrapper--desc">
+                        <h1>Бесплатная юридическая консультация по телефону</h1>
+        
+                        <div class="popup__wrapper--desc-law">
+                            <img src="./assets/images/onlinelawyers.png" alt="lawyers">
+                            <p>64 юриста сейчас онлайн</p>
+                        </div>
+        
+                        <div class="sendbtn">
+                            <div class="btn">
+                                <span>Номер телефона</span>
+                                <input type="tel" required placeholder="+7 963 335-87-52">
+                            </div>
+        
+                            <div class="btn">
+                                <span>Ваше имя</span>
+                                <input type="text" required placeholder="Александр">
+                            </div>
+        
+                            <button class="submitBtn">Отправить</button>
+        
+                        </div>
+                        <p class="info">Отправляя вопрос, вы соглашаетесь с условиями Пользовательского соглашения</p>
+        
+        
+                    </div>
+        
+                    <img src="./assets/icons/closemenu.svg" alt="closemenu" class="close">
+                </div>
+            </div>
+        
+        </section>
+
+        <section class="checked popup-success" id="popup-success">
+            <div class="container">
+                <div class="checked__wrapper">
+                    <div class="checked__wrapper-close">
+                        <span></span>
+                        <img src="./assets/icons/closemenu.svg" alt="closemenu" id="close">
+                    </div>
+
+                    <div class="check">
+                        <span></span>
+                        <img src="./assets/icons/checkwithoutbg.svg" alt="check">
+                        <span></span>
+                    </div>
+                    <h1>Спасибо, ваша заявка принята</h1>
+
+                    <p>Мы свяжемся с вами в течение х минут</p>
+
+                    <div class="btn">
+                        <button id="close">Закрыть окно</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -1013,6 +1120,7 @@
     <!---------------- Footer section end ---------------->
 
 </body>
+<script src="./js/utils.js"></script>
 <script src="./js/main.js"></script>
 
 </html>
