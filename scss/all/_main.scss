@@ -728,6 +728,16 @@ main {
                         font-size: 16px;
                         font-weight: 600;
                         line-height: 22px;
+
+                        &:hover {
+                                background: $color-emarald;
+                            }
+                        
+                            &:active {
+                                background: $color-primary-green;
+                            }
+
+                    
                     }
                 }
 
@@ -911,6 +921,14 @@ main {
                         line-height: 22px;
                         border: none;
                         background-color: $color-second-green;
+
+                        &:hover {
+                                background: $color-emarald;
+                            }
+                        
+                            &:active {
+                                background: $color-primary-green;
+                            }
                     }
                 }
 

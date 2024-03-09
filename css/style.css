@@ -1365,6 +1365,12 @@ main .hotlines__wrapper--btns .calltheoperator button {
   font-weight: 600;
   line-height: 22px;
 }
+main .hotlines__wrapper--btns .calltheoperator button:hover {
+  background: #81D2BC;
+}
+main .hotlines__wrapper--btns .calltheoperator button:active {
+  background: #016F52;
+}
 main .hotlines__wrapper--btns-info {
   color: rgba(255, 255, 255, 0.5019607843);
   font-size: 12px;
@@ -1532,6 +1538,12 @@ main .questions__wrapper--btns .calltheoperator button {
   line-height: 22px;
   border: none;
   background-color: #33836E;
+}
+main .questions__wrapper--btns .calltheoperator button:hover {
+  background: #81D2BC;
+}
+main .questions__wrapper--btns .calltheoperator button:active {
+  background: #016F52;
 }
 main .questions__wrapper--btns .desc {
   color: rgba(47, 43, 67, 0.4);
