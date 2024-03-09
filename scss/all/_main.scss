@@ -817,18 +817,40 @@ main {
     .questions {
         margin-bottom: 80px;
 
+        @media screen and (max-width:390px) {
+            margin-bottom: 40px;
+        }
+
         &__wrapper {
             border-radius: 20px;
             background: $color-second-gray;
             display: flex;
             justify-content: space-between;
 
+            @media screen and (max-width:390px) {
+                flex-direction: column;
+            }
+
             &-call {
                 padding: 40px 15px 30px 43px;
+
+                @media screen and (max-width:390px) {
+                    padding: 10px 20px 10px 20px;
+                }
 
                 h1 {
                     width: 320px;
                     height: 88px;
+
+                    @media screen and (max-width:390px) {
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 33px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        width: 320px;
+                        height: 66px;
+                    }
                 }
             }
 
@@ -838,6 +860,11 @@ main {
                     display: flex;
                     gap: 15px;
                     margin-bottom: 22px;
+
+                    @media screen and (max-width:390px) {
+                        flex-direction: column;
+                        padding: 0 20px;
+                    }
 
                     .btn {
                         display: flex;
@@ -895,6 +922,10 @@ main {
                     letter-spacing: 0%;
                     width: 310px;
 
+                    @media screen and (max-width:390px) {
+                        padding: 0 20px;
+                    }
+
                 }
 
             }
@@ -902,6 +933,10 @@ main {
             .phone {
                 position: relative;
                 top: 4px;
+
+                @media screen and (max-width:390px) {
+                    padding: 0 34px;
+                }
             }
         }
     }

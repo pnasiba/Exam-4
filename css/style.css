@@ -1425,24 +1425,56 @@ main .aboutLawyers__wrapper--cards-item .info {
 main .questions {
   margin-bottom: 80px;
 }
+@media screen and (max-width: 390px) {
+  main .questions {
+    margin-bottom: 40px;
+  }
+}
 main .questions__wrapper {
   border-radius: 20px;
   background: rgba(47, 43, 67, 0.0392156863);
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 390px) {
+  main .questions__wrapper {
+    flex-direction: column;
+  }
+}
 main .questions__wrapper-call {
   padding: 40px 15px 30px 43px;
+}
+@media screen and (max-width: 390px) {
+  main .questions__wrapper-call {
+    padding: 10px 20px 10px 20px;
+  }
 }
 main .questions__wrapper-call h1 {
   width: 320px;
   height: 88px;
+}
+@media screen and (max-width: 390px) {
+  main .questions__wrapper-call h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 320px;
+    height: 66px;
+  }
 }
 main .questions__wrapper--btns .calltheoperator {
   padding-top: 57px;
   display: flex;
   gap: 15px;
   margin-bottom: 22px;
+}
+@media screen and (max-width: 390px) {
+  main .questions__wrapper--btns .calltheoperator {
+    flex-direction: column;
+    padding: 0 20px;
+  }
 }
 main .questions__wrapper--btns .calltheoperator .btn {
   display: flex;
@@ -1495,9 +1527,19 @@ main .questions__wrapper--btns .desc {
   letter-spacing: 0%;
   width: 310px;
 }
+@media screen and (max-width: 390px) {
+  main .questions__wrapper--btns .desc {
+    padding: 0 20px;
+  }
+}
 main .questions__wrapper .phone {
   position: relative;
   top: 4px;
+}
+@media screen and (max-width: 390px) {
+  main .questions__wrapper .phone {
+    padding: 0 34px;
+  }
 }
 main .seoText__wrapper {
   margin-bottom: 80px;
