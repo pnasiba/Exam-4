@@ -611,8 +611,18 @@ main {
             border-radius: 30px;
             padding: 31px 57px 34px 60px;
 
+            @media screen and (max-width: 390px) {
+                margin-bottom: 40px;
+                padding: 20px;
+                flex-direction: column;
+            }
+
             &-call {
                 padding: 20px 0 0 0;
+
+                @media screen and (max-width: 390px) {
+                    padding: 0;
+                }
 
                 h3 {
                     color: $color-white;
@@ -621,6 +631,15 @@ main {
                     line-height: 33px;
                     letter-spacing: 0%;
                     margin-bottom: 10px;
+
+                    @media screen and (max-width: 390px) {
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 25px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        margin-bottom: 5px;
+                    }
                 }
 
                 a {
@@ -630,6 +649,14 @@ main {
                     line-height: 57px;
                     letter-spacing: -3%;
                     text-decoration: none;
+
+                    @media screen and (max-width: 390px) {
+                        font-size: 36px;
+                        font-weight: 700;
+                        line-height: 49px;
+                        letter-spacing: -3%;
+                        text-align: left;
+                    }
                 }
             }
 
@@ -641,12 +668,26 @@ main {
                     line-height: 25px;
                     letter-spacing: 0%;
                     margin-bottom: 16px;
+
+                    @media screen and (max-width:390px) {
+                        font-size: 16px;
+                        font-weight: 600;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        padding: 15px 0;
+                        margin-bottom: 0;
+                    }
                 }
 
                 .calltheoperator {
                     display: flex;
                     gap: 15px;
                     margin-bottom: 22px;
+
+                    @media screen and (max-width:390px) {
+                        flex-direction: column;
+                    }
 
                     .btn {
                         display: flex;
@@ -704,9 +745,26 @@ main {
     .aboutLawyers {
         margin-bottom: 60px;
 
+        @media screen and (max-width:390px) {
+            margin-bottom: 40px;
+
+            h1 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 27px;
+                letter-spacing: -3%;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+        }
+
         &__wrapper {
             display: flex;
             justify-content: space-between;
+
+            @media screen and (max-width: 390px) {
+                flex-direction: column;
+            }
 
             &--cards {
                 box-sizing: border-box;
@@ -716,6 +774,13 @@ main {
                 width: 575px;
                 height: 287px;
                 margin-bottom: 20px;
+
+                @media screen and (max-width:390px) {
+                    width: 319.5px;
+                    height: 484px;
+                    margin: 0 auto 10px auto;
+
+                }
 
                 &-item {
                     display: flex;
@@ -737,6 +802,11 @@ main {
 
                     .info {
                         width: 502px;
+
+                        @media screen and (max-width:390px) {
+                            width: 279.5px;
+                            height: 270px;
+                        }
                     }
 
                 }
