@@ -1071,6 +1071,11 @@ main .callCenter__wrapper .onlineLawyer p {
 main .help {
   margin-bottom: 60px;
 }
+@media screen and (max-width: 390px) {
+  main .help {
+    margin-bottom: 40px;
+  }
+}
 main .help h1 {
   color: #140A32;
   font-size: 32px;
@@ -1079,20 +1084,53 @@ main .help h1 {
   letter-spacing: -3%;
   margin-bottom: 30px;
 }
+@media screen and (max-width: 390px) {
+  main .help h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: -3%;
+    text-align: left;
+  }
+}
 main .help__wrapper {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 390px) {
+  main .help__wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 main .help__wrapper--cards {
   display: flex;
   gap: 20px;
   align-items: center;
   box-sizing: border-box;
-  /* Gray/Borders */
   border: 1px solid rgba(47, 43, 67, 0.15);
   border-radius: 20px;
   padding: 30px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 390px) {
+  main .help__wrapper--cards {
+    padding: 20px;
+    flex-direction: column;
+  }
+  main .help__wrapper--cards img {
+    width: 54px;
+    height: 54px;
+    margin-right: auto;
+  }
+  main .help__wrapper--cards p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 319px;
+  }
 }
 main .selection__wrapper {
   display: flex;
