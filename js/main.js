@@ -27,43 +27,76 @@ let popUp = $(".popup__wrapper"),
   submitBtn = $(".submitBtn"),
   popupSuccess = $(".checked"),
   successCLose = $("#close"),
-  btn = $(".btn"), 
-  main = $("main")
+  btn = $(".btn"),
+  main = $("main"),
+  formInput = $("#form"),
+  btnSubmit = (".btnSubmit")
 
-closebtn.addEventListener("click", function(e) {
+closebtn.addEventListener("click", function (e) {
   e.preventDefault();
-  popUp.style.display = "none";
-  main.style.backgroundColor = "none";
-
+  if (areInputsFilled()) {
+    popUp.style.display = "none";
+    main.style.backgroundColor = ""; // Reset background color
+  } else {
+    alert("Please fill all inputs.");
+  }
 });
 
 headerBtn.addEventListener("click", () => {
-  main.style.backgroundColor = "gray"
-  popupSection.style.display = "block";
-  popupSection.style.position = "absolute";
-  popupSection.style.top = "300px";
-  popupSection.style.zIndex = "999999";
-  popupSection.style.left = "400px";
+  if (areInputsFilled()) {
+    main.style.backgroundColor = "gray";
+    popupSection.style.display = "block";
+    popupSection.style.position = "absolute";
+    popupSection.style.top = "300px";
+    popupSection.style.zIndex = "999999";
+    popupSection.style.left = "400px";
+  } else {
+    alert("Please fill all inputs.");
+  }
 });
 
 submitBtn.addEventListener("click", () => {
-  popupSection.style.display = "none";
-  popupSuccess.style.display = "block";
-  popupSuccess.style.position = "absolute";
-  popupSuccess.style.top = "300px";
-  popupSuccess.style.zIndex = "999999";
-  popupSuccess.style.left = "500px";
-  console.log("success");
+  if (areInputsFilled()) {
+    popupSection.style.display = "none";
+    popupSuccess.style.display = "block";
+    popupSuccess.style.position = "absolute";
+    popupSuccess.style.top = "300px";
+    popupSuccess.style.zIndex = "999999";
+    popupSuccess.style.left = "500px";
+    console.log("success");
+    window.scroll({ top: 0, left: 0, behavior: "smooth" });
+  } else {
+    alert("Please fill all inputs.");
+  }
 });
 
-successCLose.addEventListener("click", function(e){
-  e.preventDefault()
-  popupSuccess.style.display = "none"
-  main.style.backgroundColor = "none";
-})
+successCLose.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (areInputsFilled()) {
+    popupSuccess.style.display = "none";
+    main.style.backgroundColor = "";
+  } else {
+    alert("Please fill all inputs.");
+  }
+});
 
 btn.addEventListener("click", function (e) {
   e.preventDefault();
-  popupSuccess.style.display = "none";
-  main.style.backgroundColor = "none";
+  if (areInputsFilled()) {
+    popupSuccess.style.display = "none";
+    main.style.backgroundColor = "";
+  } else {
+    alert("Please fill all inputs.");
+  }
 });
+
+function areInputsFilled() {
+  let inputs = $("input");
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].value.trim() === "") {
+      return false;
+    }
+  }
+  return true;
+}
+
