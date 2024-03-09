@@ -1042,7 +1042,7 @@ main .carousel .map {
 }
 main .carousel .map > button {
   all: unset;
-  background: #1A77A3;
+  background: #016F52;
   cursor: pointer;
   margin: 0 0.125em;
   position: relative;
@@ -1054,7 +1054,7 @@ main .carousel .map > button {
   width: 1em;
 }
 main .carousel .map > button.active:after {
-  background: #001d38;
+  background: #016F52;
   content: "";
   left: 50%;
   position: absolute;
@@ -1267,4 +1267,46 @@ main .portal__wrapper--form-count span {
   line-height: 22px;
   letter-spacing: 0%;
   text-align: left;
+}
+
+footer {
+  margin-bottom: 150px;
+}
+footer h1 {
+  color: #140A32;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -3%;
+  text-align: left;
+  margin-bottom: 40px;
+}
+footer .footer__wrapper--info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+footer .footer__wrapper--info .cards {
+  width: 280px;
+}
+footer .footer__wrapper--info .cards h3 {
+  color: #140A32;
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+footer .footer__wrapper--info .cards .desc {
+  height: 118px;
+}
+footer .footer__wrapper--info .cards .desc p {
+  color: #140A32;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
 }

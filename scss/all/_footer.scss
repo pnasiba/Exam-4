@@ -1,3 +1,51 @@
-footer{
-    
+footer {
+    margin-bottom: 150px;
+
+    h1 {
+        color: $color-base-black;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        letter-spacing: -3%;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    .footer__wrapper {
+        &--info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .cards {
+                width: 280px;
+
+                h3 {
+                    color: $color-base-black;
+                    font-size: 24px;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                    line-height: 33px;
+                    letter-spacing: 0%;
+                    text-align: left;
+                }
+
+                .desc {
+
+                    height: 118px;
+
+                    p {
+                        color: $color-base-black;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        letter-spacing: 0%;
+                        text-align: left;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
 }

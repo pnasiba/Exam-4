@@ -705,7 +705,7 @@ main {
 
             &>button {
                 all: unset;
-                background: $color-primary-blue;
+                background: $color-primary-green;
                 cursor: pointer;
                 margin: 0 0.125em;
                 position: relative;
@@ -714,7 +714,7 @@ main {
 
                 &.active {
                     &:after {
-                        background: $bgBlue;
+                        background: $color-primary-green;
                         content: "";
                         left: 50%;
                         position: absolute;
